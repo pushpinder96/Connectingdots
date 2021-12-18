@@ -1,0 +1,9452 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.NavBarDiv{
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    opacity: 0;
+    transition: navLinkFade ease-in-out 2s;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+.banner h1{
+  color: whitesmoke;
+  position: relative;
+  left: 45%;
+}
+.logo{
+  position: relative;
+  left: -15%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 30px;
+}
+
+.nav-links{
+   position:absolute;
+
+    right:0px;
+    height:92vh;
+    top: 10vh;
+    overflow-x: hidden;
+    background-color:black;
+    display:flex;
+    flex-direction: column;
+      
+    align-items: center;
+    width:20%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+.nav-links li{
+  list-style:none;
+  font-size: 17px;
+  padding: 50px;
+  opacity: 0;
+}
+.nav-links a{
+  color: rgb(226,226,226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight:bold;
+  
+  
+}
+.nav-active{
+  transform: translateX(0%);
+}
+.insta{
+    color: white;
+}
+.facebook{
+    color: white;
+}
+
+.burger{
+  display:block;
+  cursor: pointer;
+
+  position: relative;
+  left: 10%;
+}
+
+.burger div{
+  width:25px;
+  height:3px;
+  background-color:#fff;
+  margin: 5px;
+  transition: all 0.3s ease
+  
+}
+.MainBannerDiv{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+  
+}
+.MainBannerInnerDiv1{
+  width: 40%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.MainBannerInnerDiv2{
+  position: relative;
+  z-index: 10;
+  width: 70%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.divToPlaceImages{
+  width: 100%;
+  position: relative;
+  left: 20%;
+  top: -18%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+#Layer_1{
+  background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+  width: 90%;
+}
+.cls-1{
+  fill-opacity: 0;
+  stroke:black;
+  stroke-width: 10px;
+  
+  stroke-dashoffset: 30000;
+  stroke-dasharray:30000;
+}
+#svg_1{
+  stroke-dashoffset: 137;
+  stroke-dasharray:137;
+  
+}
+#svg_2{
+  stroke-dasharray:72;
+  stroke-dashoffset: 72;
+}
+/*marketing*/
+.marketing{
+  position: absolute;
+  top: 31.2%;
+  left: 58%;
+}
+.marketing p{
+  position: absolute;
+  top: 26%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+
+}
+.marketing p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.marketing img{
+  width: 270px;
+  opacity: 0;
+  transform:rotateX(90deg);
+}
+/*design*/
+.design{
+  position: absolute;
+  top: 60%;
+  left: 2%;
+}
+
+.design p{
+
+   position: absolute;
+  top: 28%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.design p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+}
+.design img{
+
+  width: 270px;
+  opacity: 1;
+  transform:rotateX(90deg);
+}
+/*motion*/
+.motion{
+
+  position: absolute;
+  top: 44.5%;
+  left: 9%;
+
+}
+.motion p{
+
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+
+}
+.motion p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+}
+.motion img{
+  width: 290px;
+  opacity: 1;
+  transform:rotateX(90deg);
+}
+/*ads*/
+.ads{
+  
+  position: absolute;
+  top: 40%;
+  left: 37%;
+}
+.ads p{
+
+  position: absolute;
+  top: 28%;
+  left: 16%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.ads p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+}
+.ads img{
+  width: 300px;
+  opacity: 1;
+  transform:rotateX(90deg);
+}
+/*connectiong dots */
+
+.connectingDiv{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: -10%;
+  left: 15%;
+  color: red;
+  font-size: 50px;
+  font-weight: lighter;
+}
+.connectingDiv
+div:nth-child(12),
+div:nth-child(13),
+div:nth-child(14),
+div:nth-child(15),
+div:nth-child(16){
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.dotsDiv{
+  position: relative;
+  left: 10%;
+  top: 6%;
+}
+.dots{
+
+  border-radius: 50%;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}
+.underTitle{
+  position: absolute;
+  padding: 10px;
+  top: 30%;
+  left: 5%;
+  animation: 1500ms ease-in navLinkFade;
+}
+.fab{
+  font-size: 30px;
+  cursor: pointer;
+}
+/*button div*/
+
+.container {
+  align-items: center;
+  border-radius: 26px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  height: 52px;
+  width: 190px;
+  opacity: 0;
+}
+
+.bottom {
+  border-radius: 26px;
+  background: yellow;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.cover {
+  background-color:#d7385e;
+  border-radius: 26px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  color: black;
+}
+.cut {
+  clip-path: polygon(
+    100% 0%,
+    99.73714% -0.13875%,
+    98.96737% -0.53964%,
+    97.71887% -1.17957%,
+    96.01985% -2.03547%,
+    93.89849% -3.08428%,
+    91.38299% -4.30291%,
+    88.50154% -5.66829%,
+    85.28234% -7.15734%,
+    81.75358% -8.74699%,
+    77.94346% -10.41416%,
+    73.88016% -12.13578%,
+    69.59189% -13.88876%,
+    65.10683% -15.65005%,
+    60.45319% -17.39655%,
+    55.65915% -19.10519%,
+    50.75291% -20.75291%,
+    45.76266% -22.31661%,
+    40.7166% -23.77324%,
+    35.64292% -25.09971%,
+    30.56981% -26.27294%,
+    25.52548% -27.26986%,
+    20.5381% -28.0674%,
+    15.63589% -28.64248%,
+    10.84702% -28.97202%,
+    6.1997% -29.03295%,
+    1.72212% -28.8022%,
+    -2.55753% -28.25668%,
+    -6.61106% -27.37332%,
+    -10.41026% -26.12905%,
+    -13.92694% -24.50079%,
+    -17.13292% -22.46546%,
+    -20% -20%,
+    -22.46546% -17.13292%,
+    -24.50079% -13.92694%,
+    -26.12905% -10.41026%,
+    -27.37332% -6.61106%,
+    -28.25668% -2.55753%,
+    -28.8022% 1.72212%,
+    -29.03295% 6.1997%,
+    -28.97202% 10.84702%,
+    -28.64248% 15.63589%,
+    -28.0674% 20.5381%,
+    -27.26986% 25.52548%,
+    -26.27294% 30.56981%,
+    -25.09971% 35.64292%,
+    -23.77324% 40.7166%,
+    -22.31661% 45.76266%,
+    -20.75291% 50.75291%,
+    -19.10519% 55.65915%,
+    -17.39655% 60.45319%,
+    -15.65005% 65.10683%,
+    -13.88876% 69.59189%,
+    -12.13578% 73.88016%,
+    -10.41416% 77.94346%,
+    -8.74699% 81.75358%,
+    -7.15734% 85.28234%,
+    -5.66829% 88.50154%,
+    -4.30291% 91.38299%,
+    -3.08428% 93.89849%,
+    -2.03547% 96.01985%,
+    -1.17957% 97.71887%,
+    -0.53964% 98.96737%,
+    -0.13875% 99.73714%,
+    0% 100%,
+    100% 100%
+  );
+  transition: clip-path 500ms;
+}
+.container:hover .cut {
+  clip-path: polygon(
+    100% 0%,
+    100.00018% 0.14326%,
+    99.99754% 0.56399%,
+    99.98732% 1.24864%,
+    99.96476% 2.18368%,
+    99.92511% 3.35553%,
+    99.8636% 4.75066%,
+    99.77547% 6.35551%,
+    99.65597% 8.15653%,
+    99.50033% 10.14017%,
+    99.3038% 12.29288%,
+    99.06161% 14.60111%,
+    98.76901% 17.0513%,
+    98.42123% 19.62992%,
+    98.01352% 22.3234%,
+    97.54112% 25.11819%,
+    96.99926% 28.00074%,
+    96.38318% 30.95751%,
+    95.68814% 33.97494%,
+    94.90936% 37.03949%,
+    94.0421% 40.13759%,
+    93.08158% 43.2557%,
+    92.02305% 46.38027%,
+    90.86174% 49.49775%,
+    89.59291% 52.59459%,
+    88.21179% 55.65723%,
+    86.71362% 58.67212%,
+    85.09364% 61.62572%,
+    83.34709% 64.50448%,
+    81.46921% 67.29483%,
+    79.45524% 69.98324%,
+    77.30042% 72.55614%,
+    75% 75%,
+    72.55614% 77.30042%,
+    69.98324% 79.45524%,
+    67.29483% 81.46921%,
+    64.50448% 83.34709%,
+    61.62572% 85.09364%,
+    58.67212% 86.71362%,
+    55.65723% 88.21179%,
+    52.59459% 89.59291%,
+    49.49775% 90.86174%,
+    46.38027% 92.02305%,
+    43.2557% 93.08158%,
+    40.13759% 94.0421%,
+    37.03949% 94.90936%,
+    33.97494% 95.68814%,
+    30.95751% 96.38318%,
+    28.00074% 96.99926%,
+    25.11819% 97.54112%,
+    22.3234% 98.01352%,
+    19.62992% 98.42123%,
+    17.0513% 98.76901%,
+    14.60111% 99.06161%,
+    12.29288% 99.3038%,
+    10.14017% 99.50033%,
+    8.15653% 99.65597%,
+    6.35551% 99.77547%,
+    4.75066% 99.8636%,
+    3.35553% 99.92511%,
+    2.18368% 99.96476%,
+    1.24864% 99.98732%,
+    0.56399% 99.99754%,
+    0.14326% 100.00018%,
+    0% 100%,
+    100% 100%
+  );
+}
+.container:active .cut {
+  clip-path: polygon(
+    127.29527% 25.2734%,
+    127.29545% 25.41665%,
+    127.2928% 25.83738%,
+    127.28259% 26.52204%,
+    127.26003% 27.45707%,
+    127.22038% 28.62893%,
+    127.15887% 30.02405%,
+    127.07074% 31.6289%,
+    126.95124% 33.42992%,
+    126.7956% 35.41357%,
+    126.59907% 37.56628%,
+    126.35688% 39.8745%,
+    126.06428% 42.3247%,
+    125.7165% 44.90331%,
+    125.30879% 47.59679%,
+    124.83638% 50.39158%,
+    124.29452% 53.27414%,
+    123.67845% 56.23091%,
+    122.98341% 59.24834%,
+    122.20463% 62.31288%,
+    121.33736% 65.41099%,
+    120.37685% 68.5291%,
+    119.31831% 71.65367%,
+    118.15701% 74.77115%,
+    116.88818% 77.86798%,
+    115.50706% 80.93062%,
+    114.00889% 83.94552%,
+    112.3889% 86.89912%,
+    110.64235% 89.77787%,
+    108.76447% 92.56823%,
+    106.75051% 95.25663%,
+    104.59569% 97.82954%,
+    102.29527% 100.2734%,
+    99.85141% 102.57382%,
+    97.2785% 104.72864%,
+    94.5901% 106.7426%,
+    91.79974% 108.62048%,
+    88.92099% 110.36703%,
+    85.96739% 111.98702%,
+    82.9525% 113.48519%,
+    79.88985% 114.86631%,
+    76.79302% 116.13514%,
+    73.67554% 117.29644%,
+    70.55097% 118.35497%,
+    67.43286% 119.31549%,
+    64.33476% 120.18276%,
+    61.27021% 120.96154%,
+    58.25278% 121.65658%,
+    55.29601% 122.27265%,
+    52.41345% 122.81451%,
+    49.61866% 123.28692%,
+    46.92518% 123.69463%,
+    44.34657% 124.0424%,
+    41.89638% 124.33501%,
+    39.58815% 124.5772%,
+    37.43544% 124.77373%,
+    35.4518% 124.92937%,
+    33.65078% 125.04887%,
+    32.04593% 125.137%,
+    30.6508% 125.19851%,
+    29.47894% 125.23816%,
+    28.54391% 125.26071%,
+    27.85926% 125.27093%,
+    27.43852% 125.27358%,
+    27.29527% 125.2734%,
+    127.29527% 125.2734%
+  );
+}
+.dot {
+  position: absolute;
+  /*draw particles as circles:*/
+  border-radius: 50%;
+  background-color: yellow;
+}
+.text-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+}
+.text-dark {
+  color:black;
+}
+.overlay {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+/*banners*/
+
+.BannersOuterDiv {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 2%;
+  top: 100%;
+  background-color: black;
+  margin-top: 50px;
+}
+
+/* Create four equal columns that sits next to each other */
+.BannerInnerDiv {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width:20%;
+  flex-flow: row;
+  flex-direction: row;
+  
+}
+.BannerInnerDiv img {
+  margin: 12px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 20px;
+}
+#exampleModal #modalBody{
+  
+  position: absolute;
+  top: 120%;
+  right:-100%;
+  width: 300%;
+  height: 900px;
+  
+}
+.carousel-inner{
+
+  width: 100%;
+  height: 100%;
+}
+.carousel-item img{
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  max-width: 70%;
+  max-height: 1000px;
+  min-height: 700px;
+  object-fit: contain;
+  
+}
+/*video section*/
+
+.showcase
+{
+  position: absolute;
+  top: 630%;
+  width: 100%;
+  min-height: 52vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+  background-color: black;
+}
+.videoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 800px;
+
+}
+
+.social
+{
+  position: absolute;
+  left: 55%;
+  top: 130%;
+  z-index: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a i
+{
+  color: white;
+  font-size: 70px;
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.4);
+  transition: 0.5s;
+  text-decoration: none;
+}
+.social li a i:hover
+{
+  transform: scale(0.5) translateY(-20px);
+}
+.videoSection{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+}
+.videoSection .video{
+  width: 25%;
+  padding: 20px;
+  cursor: pointer;
+  
+}
+
+#video{
+  display: block;
+}
+.top{
+  color: white;
+  position:absolute;
+  top: 700%;
+  left: 5%;
+  font-size: 40px;
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.top a{
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+@media (max-width: 991px)
+{
+
+
+.showcase
+{
+  position: absolute;
+  top: 500%;
+  right: 0;
+  width: 100%;
+  min-height: 120vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (width: 1440px){
+
+  .showcase
+  {
+    position: absolute;
+    top: 370%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 800px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 55%;
+    top: 130%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 70px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+  }
+  .videoSection .video{
+    width: 25%;
+    padding: 20px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 450%;
+    left: 5%;
+    font-size: 40px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+   
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .MainBannerInnerDiv1{
+    width: 50%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .MainBannerInnerDiv2{
+    position: relative;
+    z-index: 10;
+    width: 75%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (min-height: 960px) and (min-width: 1600px){
+
+  .showcase
+  {
+    position: absolute;
+    top: 600%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 800px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 55%;
+    top: 130%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 70px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+  }
+  .videoSection .video{
+    width: 25%;
+    padding: 20px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 650%;
+    left: 5%;
+    font-size: 40px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+   
+.MainBannerInnerDiv1{
+  width: 50%;
+  
+  height: 100%;
+  overflow-x: hidden;
+}
+.MainBannerInnerDiv2{
+  position: relative;
+  z-index: 10;
+  width: 75%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.divToPlaceImages{
+  width: 100%;
+  position: relative;
+  left: 20%;
+  top: -4%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+#Layer_1{
+  background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+  width: 90%;
+}
+
+/*marketing*/
+.marketing{
+  position: absolute;
+  top: 31.5%;
+  left: 56%;
+}
+.marketing p{
+  position: absolute;
+  top: 26%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+
+}
+.marketing p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.marketing img{
+  width: 270px;
+  opacity: 0;
+  transform:rotateX(90deg);
+}
+/*design*/
+.design{
+  position: absolute;
+  top: 53%;
+  left: 4%;
+}
+
+.design p{
+
+   position: absolute;
+  top: 28%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.design p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+}
+.design img{
+
+  width: 300px;
+  opacity: 1;
+  transform:rotateX(90deg);
+}
+/*motion*/
+.motion{
+
+  position: absolute;
+  top: 42%;
+  left: 14%;
+
+}
+.motion p{
+
+  position: absolute;
+  top: 29%;
+  left: 12%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+
+}
+.motion p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+}
+.motion img{
+  width: 290px;
+  opacity: 1;
+  transform:rotateX(90deg);
+}
+/*ads*/
+.ads{
+  
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+.ads p{
+
+  position: absolute;
+  top: 28%;
+  left: 22%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.ads p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+}
+.ads img{
+  width: 300px;
+  opacity: 1;
+  transform:rotateX(90deg);
+}
+/*connectiong dots */
+
+.connectingDiv{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: -10%;
+  left: 5%;
+  color: red;
+  font-size: 50px;
+}
+.connectingDiv div:nth-child(16),
+div:nth-child(12),
+div:nth-child(13),
+div:nth-child(14),
+div:nth-child(15){
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-decoration: none;
+}
+.dotsDiv{
+  position: relative;
+  left: 0%;
+  top: 5%;
+}
+.dots{
+
+  border-radius: 50%;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}
+.underTitle{
+  position: absolute;
+  padding: 10px;
+  top: 30%;
+  left: 1%;
+  animation: 1500ms ease-in navLinkFade;
+}
+}
+@media only screen and (max-height: 960px) and (max-width: 1600px) {
+ 
+.showcase
+{
+  position: absolute;
+  top: 570%;
+  width: 100%;
+  min-height: 52vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+  background-color: black;
+}
+.videoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 800px;
+
+}
+
+.social
+{
+  position: absolute;
+  left: 55%;
+  top: 130%;
+  z-index: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a i
+{
+  color: white;
+  font-size: 70px;
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.4);
+  transition: 0.5s;
+  text-decoration: none;
+}
+.social li a i:hover
+{
+  transform: scale(0.5) translateY(-20px);
+}
+.videoSection{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+}
+.videoSection .video{
+  width: 25%;
+  padding: 20px;
+  cursor: pointer;
+  
+}
+
+#video{
+  display: block;
+}
+.top{
+  color: white;
+  position:absolute;
+  top: 650%;
+  left: 5%;
+  font-size: 40px;
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.top a{
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ 
+  .NavBarDiv{
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    opacity: 0;
+    transition: navLinkFade ease-in-out 2s;
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.nav-links{
+   position:absolute;
+
+    right:0px;
+    height:92vh;
+    top: 10vh;
+    overflow-x: hidden;
+    background-color:black;
+    display:flex;
+    flex-direction: column;
+      
+    align-items: center;
+    width:20%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+.nav-links li{
+  list-style:none;
+  font-size: 17px;
+  padding: 50px;
+  opacity: 0;
+}
+.nav-links a{
+  color: rgb(226,226,226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight:bold;
+  
+  
+}
+.nav-active{
+  transform: translateX(0%);
+}
+
+
+.MainBannerDiv{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+  
+}
+.MainBannerInnerDiv1{
+  width: 50%;
+  
+  height: 100%;
+  overflow-x: hidden;
+}
+.MainBannerInnerDiv2{
+  position: relative;
+  z-index: 10;
+  width: 75%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.divToPlaceImages{
+  width: 100%;
+  position: relative;
+  left: 20%;
+  top: -5%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+#Layer_1{
+  background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+  width: 90%;
+}
+
+/*marketing*/
+.marketing{
+  position: absolute;
+  top: 32.5%;
+  left: 55%;
+}
+.marketing p{
+  position: absolute;
+  top: 26%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+
+}
+.marketing p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.marketing img{
+  width: 270px;
+  opacity: 0;
+  transform:rotateX(90deg);
+}
+/*design*/
+.design{
+  position: absolute;
+  top: 53%;
+  left: -0.5%;
+}
+
+.design p{
+
+   position: absolute;
+  top: 28%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.design p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+}
+.design img{
+
+  width: 270px;
+  opacity: 1;
+  transform:rotateX(90deg);
+}
+/*motion*/
+.motion{
+
+  position: absolute;
+  top: 41%;
+  left: 8%;
+
+}
+.motion p{
+
+  position: absolute;
+  top: 29%;
+  left: 12%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+
+}
+.motion p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+}
+.motion img{
+  width: 290px;
+  opacity: 1;
+  transform:rotateX(90deg);
+}
+/*ads*/
+.ads{
+  
+  position: absolute;
+  top: 39%;
+  left: 32%;
+}
+.ads p{
+
+  position: absolute;
+  top: 28%;
+  left: 22%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.ads p span:nth-child(1){
+  font-size: 25px;
+  font-weight: bold;
+}
+.ads img{
+  width: 300px;
+  opacity: 1;
+  transform:rotateX(90deg);
+}
+/*connectiong dots */
+
+.connectingDiv{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: -10%;
+  left: 5%;
+  color: red;
+  font-size: 50px;
+}
+.connectingDiv div:nth-child(16),
+div:nth-child(12),
+div:nth-child(13),
+div:nth-child(14),
+div:nth-child(15){
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-decoration: none;
+}
+.dotsDiv{
+  position: relative;
+  left: 0%;
+  top: 5%;
+}
+.dots{
+
+  border-radius: 50%;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}
+.underTitle{
+  position: absolute;
+  padding: 10px;
+  top: 30%;
+  left: 1%;
+  animation: 1500ms ease-in navLinkFade;
+}
+/*button div*/
+
+.container {
+  align-items: center;
+  border-radius: 26px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  height: 52px;
+  width: 190px;
+  opacity: 0;
+}
+
+.bottom {
+  border-radius: 26px;
+  background: yellow;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.cover {
+  background-color:#d7385e;
+  border-radius: 26px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  color: black;
+}
+.dot {
+  position: absolute;
+  /*draw particles as circles:*/
+  border-radius: 50%;
+  background-color: yellow;
+}
+.text-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+}
+.text-dark {
+  color:black;
+}
+.overlay {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+}
+
+
+
+@media screen and (max-width:1025px){
+  
+.showcase
+{
+  position: absolute;
+  top: 480%;
+  width: 100%;
+  min-height: 52vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  transition: 0.5s;
+  z-index: 2;
+  background-color: black;
+}
+.videoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 800px;
+
+}
+
+.social
+{
+  position: absolute;
+  left: 55%;
+  top: 170%;
+  z-index: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a i
+{
+  color: white;
+  font-size: 70px;
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.4);
+  transition: 0.5s;
+  text-decoration: none;
+}
+.social li a i:hover
+{
+  transform: scale(0.5) translateY(-20px);
+}
+.videoSection{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+}
+#video{
+  width:700px;
+}
+.videoSection .video{
+  width: 20%;
+  padding: 15px;
+  cursor: pointer;
+  
+}
+
+#video{
+  display: block;
+}
+.top{
+  color: white;
+  position:absolute;
+  top: 570%;
+  left: 5%;
+  font-size: 30px;
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.top a{
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ 
+  
+  .fab{
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+
+
+.BannersOuterDiv {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 2%;
+  top: 100%;
+  background-color: black;
+  margin-top: 50px;
+}
+
+/* Create four equal columns that sits next to each other */
+.BannerInnerDiv {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width:22%;
+  flex-flow: row;
+  flex-direction: row;
+  
+}
+.BannerInnerDiv img {
+  margin: 12px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 15px;
+}
+  .nav-links{
+    width:60%;
+  }
+  
+.nav-links{
+  position:absolute;
+  right:0%;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:25%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+  .MainBannerDiv{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    
+  }
+  .MainBannerInnerDiv1{
+    width: 50%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .MainBannerInnerDiv2{
+    position: relative;
+    z-index: 10;
+    width: 75%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -8%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 38.5%;
+    left: 52.5%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+  
+  }
+  
+  .marketing img{
+    width: 180px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .design img{
+  
+    width: 200px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 44%;
+    left: 8%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 12%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .motion img{
+    width: 200px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 43%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .ads img{
+    width: 200px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -10%;
+    left: 5%;
+    color: red;
+    font-size: 38px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    position: relative; 
+    top: 8%;
+  }
+  .dots{
+  
+    border-radius: 50%;
+    background-color: red;
+    width: 8px;
+    height: 8px;
+  }
+  .underTitle{
+    position: absolute;
+    padding: 10px;
+    top: 30%;
+    left: 1%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    right: 60%;
+    height: 52px;
+    width: 190px;
+    opacity: 0;
+  }
+  
+  
+}
+
+@media screen and (max-width:1025px) and (min-height:1366px){
+  .fab{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 700px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -28%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+   
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+  
+    right: 60%;
+    height: 42px;
+    width: 150px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 18px;
+  }
+
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -17%;
+    left: 25%;
+    color: red;
+    font-size: 25px;
+  }
+  .dotsDiv{
+    position: relative;
+    left: -10%;
+   
+  }
+  .dots{
+    width: 6px;
+    height: 6px;
+  }
+  .underTitle{
+    font-size: 10px;
+    position: absolute;
+    padding: 10px;
+    top: 16%;
+    left: 9%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 2%;
+    top: 55%;
+    background-color: black;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (device-width:768px){
+  .fab{
+    font-size: 22px;
+    cursor: pointer;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 690px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    
+  }
+  .MainBannerInnerDiv1{
+    width: 30%;
+    height: 100%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+    position: relative;
+    z-index: 10;
+    width: 75%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -30%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 12px;
+  
+  }
+  
+  .marketing img{
+    width: 150px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 12px;
+  
+  }
+  .design img{
+  
+    width: 180px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 44%;
+    left: 8%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 12%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 12px;
+  
+  }
+  .motion img{
+    width: 180px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 43.5%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 12px;
+  
+  }
+  .ads img{
+    width: 180px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -30%;
+    left: 4%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 10px;
+    position: absolute;
+    padding: 10px;
+    top: 15%;
+    left: 0%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    right: 100%;
+    height: 42px;
+    width: 150px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 18px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.logo{
+  position: relative;
+  left: -8%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 25px;
+}
+
+.BannersOuterDiv {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 2%;
+  top: 60%;
+  background-color: black;
+  margin-top: 50px;
+}
+
+/* Create four equal columns that sits next to each other */
+.BannerInnerDiv {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width:50%;
+  flex-flow: row;
+  flex-direction: row;
+  
+}
+.BannerInnerDiv img {
+  margin: 12px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 20px;
+}
+}
+@media screen and (max-width:768px){    
+
+  .showcase
+{
+  position: absolute;
+  top: 370%;
+  width: 100%;
+  min-height: 52vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  transition: 0.5s;
+  z-index: 2;
+  background-color: black;
+}
+.videoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 600px;
+
+}
+
+.social
+{
+  position: absolute;
+  left: 52%;
+  top: 170%;
+  z-index: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a i
+{
+  color: white;
+  font-size: 70px;
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.4);
+  transition: 0.5s;
+  text-decoration: none;
+}
+.social li a i:hover
+{
+  transform: scale(0.5) translateY(-20px);
+}
+.videoSection{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+}
+#video{
+  width:600px;
+}
+.videoSection .video{
+  width: 20%;
+  padding: 15px;
+  cursor: pointer;
+  
+}
+
+#video{
+  display: block;
+}
+.top{
+  color: white;
+  position:absolute;
+  top: 458%;
+  left: 5%;
+  font-size: 30px;
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.top a{
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ 
+  
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 2%;
+    top: 100%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 120%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    max-width: 70%;
+    max-height: 500px;
+    min-height: 300px;
+    object-fit: contain;
+    
+  }
+  .fab{
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 2%;
+    top: 80%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .BannerInnerDiv {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width:22%;
+    flex-flow: row;
+    flex-direction: row;
+    
+  }
+  .BannerInnerDiv img {
+    margin: 12px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 690px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    
+  }
+  .MainBannerInnerDiv1{
+    width: 30%;
+    height: 100%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+    position: relative;
+    z-index: 10;
+    width: 75%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -30%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 12px;
+  
+  }
+  
+  .marketing img{
+    width: 150px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 12px;
+  
+  }
+  .design img{
+  
+    width: 180px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 44%;
+    left: 8%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 12%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 12px;
+  
+  }
+  .motion img{
+    width: 180px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 43.5%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 12px;
+  
+  }
+  .ads img{
+    width: 180px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -30%;
+    left: 4%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 10px;
+    position: absolute;
+    padding: 10px;
+    top: 15%;
+    left: 0%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    right: 100%;
+    height: 42px;
+    width: 150px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 18px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.logo{
+  position: relative;
+  left: -8%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 25px;
+}
+}
+@media screen and (device-width:425px) {
+  .showcase
+  {
+    position: absolute;
+    top: 270%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 600px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 52%;
+    top: 170%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 70px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:600px;
+  }
+  .videoSection .video{
+    width: 20%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 458%;
+    left: 5%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 700px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -145%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 42%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  
+  .marketing img{
+    width: 120px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: -2%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .design img{
+  
+    width: 150px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 45%;
+    left: 8%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .motion img{
+    width: 150px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 44.5%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .ads img{
+    width: 150px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -100%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 10px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    height: 42px;
+    width: 150px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 15px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+}
+@media screen and (max-width:425px) {
+  body{
+    overflow-x: hidden;
+  }
+  .fab{
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 120%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    max-width: 60%;
+    max-height: 300px;
+    min-height: 300px;
+    object-fit: contain;
+    
+  }
+  
+  .showcase
+  {
+    position: absolute;
+    top: 750%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 250px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 42%;
+    top: 170%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:200px;
+  }
+  .videoSection .video{
+    width: 25%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 835%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+  
+     .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .BannerInnerDiv {
+    -ms-flex: 30%; /* IE10 */
+    flex: 70%;
+    max-width:42%;
+    flex-flow: row;
+    flex-direction: row;
+    
+  }
+  .BannerInnerDiv img {
+    margin: 12px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 700px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -145%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 42%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  
+  .marketing img{
+    width: 120px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: -2%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .design img{
+  
+    width: 150px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 45%;
+    left: 8%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .motion img{
+    width: 150px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 44.5%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .ads img{
+    width: 150px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -100%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 10px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 2%;
+    right: 20%;
+    height: 42px;
+    width: 150px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 15px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 0%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+}
+
+@media screen and (max-width:375px)and(max-height:840px) {
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 120%;
+    right:-100%;
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    max-width: 30%;
+    max-height: 250px;
+    min-height: 300px;
+    object-fit: contain;
+    
+  }
+  .showcase
+  {
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 600px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 52%;
+    top: 170%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 70px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:600px;
+  }
+  .videoSection .video{
+    width: 20%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 458%;
+    left: 5%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  /* Create four equal columns that sits next to each other */
+  .BannerInnerDiv {
+    -ms-flex: 30%; /* IE10 */
+    flex: 80%;
+    max-width:60%;
+    flex-flow: row;
+    flex-direction: row;
+    
+  }
+  .BannerInnerDiv img {
+    margin: 12px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 667px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -155%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 42.2%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  
+  .marketing img{
+    width: 120px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 46%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .motion img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 45.6%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .ads img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -200%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 14%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    height: 35px;
+    width: 130px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 13px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+}
+
+@media screen and (device-width:384px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 200%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    max-width: 20%;
+    max-height: 300px;
+    min-height: 250px;
+    object-fit: contain;
+    
+  }
+
+  .showcase
+  {
+    position: absolute;
+    top: 750%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 42%;
+    top: 170%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:200px;
+  }
+  .videoSection .video{
+    width: 25%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 835%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+
+  .MainBannerDiv{
+    width: 100%;
+    height: 667px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -155%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 42.2%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  
+  .marketing img{
+    width: 120px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 46%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .motion img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 45.6%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .ads img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -115%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 14%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    height: 35px;
+    width: 130px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 13px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+}
+
+@media only screen and (device-height: 720px) and (device-width: 540px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+
+  .showcase
+  {
+    position: absolute;
+    top: 900%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 40%;
+    top: 100%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:300px;
+  }
+  .videoSection .video{
+    width: 30%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 835%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+  
+  .MainBannerDiv{
+    width: 100%;
+    height: 600px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -185%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 43.7%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  
+  .marketing img{
+    width: 110px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 51%;
+    left: 7%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 17%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 47%;
+    left: 16%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .motion img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 46.2%;
+    left: 35%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .ads img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -130%;
+    left: 30%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 28%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 36%;
+    right: 15%;
+    height: 32px;
+    width: 140px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 15px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+
+
+}
+@media only screen and (max-width: 540px){
+  .showcase
+{
+  position: absolute;
+  top: 750%;
+  width: 100%;
+  min-height: 52vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 2;
+  background-color: black;
+}
+.videoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 400px;
+
+}
+
+.social
+{
+  position: absolute;
+  left: 32%;
+  top: 170%;
+  z-index: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a i
+{
+  color: white;
+  font-size: 60px;
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.4);
+  transition: 0.5s;
+  text-decoration: none;
+}
+.social li a i:hover
+{
+  transform: scale(0.5) translateY(-20px);
+}
+.videoSection{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+}
+#video{
+  width:400px;
+}
+.videoSection .video{
+  width: 25%;
+  padding: 15px;
+  cursor: pointer;
+  
+}
+
+#video{
+  display: block;
+}
+.top{
+  color: white;
+  position:absolute;
+  top: 808%;
+  left: 5%;
+  font-size: 30px;
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.top a{
+  color: blanchedalmond;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#exampleModal #modalBody{
+  
+  position: absolute;
+  top: 250%;
+  right:-100%;
+  width: 300%;
+  height: 500px;
+  
+}
+.carousel-inner{
+
+  width: 100%;
+  height: 100%;
+}
+.carousel-item img{
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  max-width: 70%;
+  max-height: 400px;
+  min-height: 300px;
+  object-fit: contain;
+  
+}
+ 
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 70%;
+    background-color: black;
+    margin-top: 50px;
+  }
+
+  
+  /* Create four equal columns that sits next to each other */
+  .BannerInnerDiv {
+    -ms-flex: 30%; /* IE10 */
+    flex: 70%;
+    max-width:42%;
+    flex-flow: row;
+    flex-direction: row;
+    
+  }
+  .BannerInnerDiv img {
+    margin: 12px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 600px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -185%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 43.7%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  
+  .marketing img{
+    width: 110px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 51%;
+    left: 7%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 17%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 47%;
+    left: 16%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .motion img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 46.2%;
+    left: 35%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .ads img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -130%;
+    left: 30%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 28%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    height: 32px;
+    width: 140px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 15px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+
+}
+
+@media only screen and (device-height: 512px) and (device-width: 717px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 520px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+
+  .showcase
+  {
+    position: absolute;
+    top: 550%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 500px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 40%;
+    top: 300%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 60px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:500px;
+  }
+  .videoSection .video{
+    width: 30%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 835%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -230%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 40.5%;
+    left: 60%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  
+  .marketing img{
+    width: 130px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 49%;
+    left: 11%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .design img{
+  
+    width: 150px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 45.2%;
+    left: 25%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .motion img{
+    width: 150px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 41.7%;
+    left: 45%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .ads img{
+    width: 150px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -160%;
+    left: 30%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 29%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 36%;
+    right: 20%;
+    height: 32px;
+    width: 140px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 15px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+#exampleModal #modalBody{
+  
+  position: absolute;
+  top: 120%;
+  right:-100%;
+  width: 300%;
+  height: 500px;
+  
+}
+.carousel-inner{
+
+  width: 100%;
+  height: 100%;
+}
+.carousel-item img{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  max-width: 30%;
+  max-height: 350px;
+  min-height: 200px;
+  object-fit: contain;
+  
+}
+.BannersOuterDiv {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  background-color: black;
+  margin-top: 50px;
+}
+
+  
+
+
+}
+@media screen and (max-width:375px) and (max-height:667px){
+
+  .showcase
+  {
+    position: absolute;
+    top: 815%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 40%;
+    top: 180%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:300px;
+  }
+  .videoSection .video{
+    width: 30%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 835%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 120%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    max-width: 27%;
+    max-height: 300px;
+    min-height: 200px;
+    object-fit: contain;
+    
+  }
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 80%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .BannerInnerDiv {
+    -ms-flex: 30%; /* IE10 */
+    flex: 50%;
+    max-width:55%;
+    flex-flow: row;
+    flex-direction: row;
+    
+  }
+  .BannerInnerDiv img {
+    margin: 12px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 667px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -155%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 42.2%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  
+  .marketing img{
+    width: 120px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 46%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .motion img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 45.6%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .ads img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -112%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 14%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    height: 35px;
+    width: 130px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 13px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+}
+
+@media only screen and (device-height: 640px) and (device-width: 360px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+
+  .showcase
+  {
+    position: absolute;
+    top: 900%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 40%;
+    top: 100%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:300px;
+  }
+  .videoSection .video{
+    width: 30%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 835%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+  .MainBannerDiv{
+    width: 100%;
+    height: 550px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -200%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 43.3%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  
+  .marketing img{
+    width: 100px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: -1%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 47%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .motion img{
+    width: 108px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 46.4%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .ads img{
+    width: 105px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -145%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 36%;
+    right: 15%;
+    height: 32px;
+    width: 120px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 12px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+
+}
+@media only screen and  (max-width: 360px){
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 120%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    max-width: 30%;
+    max-height: 500px;
+    min-height: 300px;
+    object-fit: contain;
+    
+  }
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 80%;
+    background-color: black;
+    margin-top: 50px;
+  }
+
+  .showcase
+  {
+    position: absolute;
+    top: 830%;
+    right: 0;
+    width: 100%;
+    min-height: 120vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  
+  /* Create four equal columns that sits next to each other */
+  .BannerInnerDiv {
+    -ms-flex: 30%; /* IE10 */
+    flex: 50%;
+    max-width:55%;
+    flex-flow: row;
+    flex-direction: row;
+    
+  }
+  .BannerInnerDiv img {
+    margin: 12px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 95%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .BannerInnerDiv {
+    -ms-flex: 30%; /* IE10 */
+    flex: 50%;
+    max-width:55%;
+    flex-flow: row;
+    flex-direction: row;
+    
+  }
+  .BannerInnerDiv img {
+    margin: 12px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 550px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -200%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 43.3%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  
+  .marketing img{
+    width: 100px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: -1%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 47%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .motion img{
+    width: 108px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 46.4%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .ads img{
+    width: 105px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -145%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    height: 32px;
+    width: 120px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 12px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+
+}
+
+@media only screen and (device-height: 731px) and (device-width: 411px){
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 200%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    max-width: 30%;
+    max-height: 500px;
+    min-height: 300px;
+    object-fit: contain;
+    
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 520px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -230%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 43.8%;
+    left: 61%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  
+  .marketing img{
+    width: 90px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 49%;
+    left: 3.5%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 45.5%;
+    left: 20%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .motion img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 43.7%;
+    left: 40.5%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .ads img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -150%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 31%;
+    right: 20%;
+    height: 32px;
+    width: 140px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 15px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+
+}
+
+@media only screen and (device-height: 823px) and (device-width: 411px){
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 200%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    max-width: 30%;
+    max-height: 500px;
+    min-height: 300px;
+    object-fit: contain;
+    
+  }
+
+  .showcase
+  {
+    position: absolute;
+    top: 630%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 40%;
+    top: 150%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:300px;
+  }
+  .videoSection .video{
+    width: 30%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 705%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 520px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -230%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 43.8%;
+    left: 61%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  
+  .marketing img{
+    width: 90px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 49%;
+    left: 3.5%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 45.5%;
+    left: 20%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .motion img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 43.7%;
+    left: 40.5%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .ads img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -150%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 11%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    height: 32px;
+    width: 140px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 15px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+
+}
+
+@media only screen and (device-height: 736px) and (device-width: 414px){
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 200%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 20%;
+    left: 39%;
+    max-width: 25%;
+    max-height: 300px;
+    min-height: 200px;
+    object-fit: contain;
+    
+  }
+
+  .showcase
+  {
+    position: absolute;
+    top: 700%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 40%;
+    top: 180%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:300px;
+  }
+  .videoSection .video{
+    width: 30%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 800%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+
+
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 520px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -230%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 43.8%;
+    left: 61%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  
+  .marketing img{
+    width: 90px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 49%;
+    left: 3.5%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 45.5%;
+    left: 20%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .motion img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 43.7%;
+    left: 40.5%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .ads img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -150%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 31%;
+    right: 20%;
+    height: 32px;
+    width: 140px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 15px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+
+}
+
+@media screen and (device-width:320px)and (device-height: 568px) {
+
+
+  .showcase
+  {
+    position: absolute;
+    top: 840%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 33%;
+    top: 230%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:300px;
+  }
+  .videoSection .video{
+    width: 30%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 860%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+
+
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 95%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .BannerInnerDiv {
+    -ms-flex: 30%; /* IE10 */
+    flex: 50%;
+    max-width:55%;
+    flex-flow: row;
+    flex-direction: row;
+    
+  }
+  .BannerInnerDiv img {
+    margin: 12px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 580px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -185%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 44%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  
+  .marketing img{
+    width: 90px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 51%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .design img{
+  
+    width: 100px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 47%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .motion img{
+    width: 100px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 46.4%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .ads img{
+    width: 100px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -140%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    height: 32px;
+    width: 120px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 8px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+
+}
+@media screen and (device-width:320px)and (device-height: 839px) {
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top:70%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .BannerInnerDiv {
+    -ms-flex: 30%; /* IE10 */
+    flex: 80%;
+    max-width:50%;
+    flex-flow: row;
+    flex-direction: row;
+    
+  }
+  .BannerInnerDiv img {
+    margin: 12px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 580px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -185%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 44%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  
+  .marketing img{
+    width: 90px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 51%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .design img{
+  
+    width: 100px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 47%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .motion img{
+    width: 100px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 46.4%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .ads img{
+    width: 100px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -125%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    height: 32px;
+    width: 120px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 8px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+}
+
+@media screen and (device-width:375px) and (device-height:812px){
+  
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 200%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    max-width: 25%;
+    max-height: 300px;
+    min-height: 250px;
+    object-fit: contain;
+    
+  }
+
+  .showcase
+  {
+    position: absolute;
+    top: 600%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 40%;
+    top: 160%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:300px;
+  }
+  .videoSection .video{
+    width: 30%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 788%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+
+
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 80%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -155%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 42.2%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  
+  .marketing img{
+    width: 120px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 46%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 10px;
+  
+  }
+  .motion img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 45.6%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 8px;
+  
+  }
+  .ads img{
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -105%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 14%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    height: 35px;
+    width: 130px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 13px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+}
+
+@media screen and (device-width:280px)and (device-height: 653px) {
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  .MainBannerDiv{
+    width: 100%;
+    height: 550px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -195%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 45.3%;
+    left: 56%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  
+  .marketing img{
+    width: 70px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 51%;
+    left: 0.5%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .design img{
+  
+    width: 80px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 47.6%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .motion img{
+    width: 80px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 47.1%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .ads img{
+    width: 80px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -120%;
+    left: 10%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 18%;
+    left: 8%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    height: 32px;
+    width: 120px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 12px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+  
+}
+@media only screen and (device-height: 700px) and (device-width: 400px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    width:60%;
+  }
+  #exampleModal #modalBody{
+  
+    position: absolute;
+    top: 200%;
+    right:-100%;
+    width: 300%;
+    height: 500px;
+    
+  }
+  .carousel-inner{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    max-width: 30%;
+    max-height: 500px;
+    min-height: 300px;
+    object-fit: contain;
+    
+  }
+
+  .showcase
+  {
+    position: absolute;
+    top: 750%;
+    width: 100%;
+    min-height: 52vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 2;
+    background-color: black;
+  }
+  .videoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+  
+  }
+  
+  .social
+  {
+    position: absolute;
+    left: 42%;
+    top: 170%;
+    z-index: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li
+  {
+    list-style: none;
+  }
+  .social li a i
+  {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.4);
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .social li a i:hover
+  {
+    transform: scale(0.5) translateY(-20px);
+  }
+  .videoSection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  }
+  #video{
+    width:300px;
+  }
+  .videoSection .video{
+    width: 25%;
+    padding: 15px;
+    cursor: pointer;
+    
+  }
+  
+  #video{
+    display: block;
+  }
+  .top{
+    color: white;
+    position:absolute;
+    top: 835%;
+    left: 2%;
+    font-size: 30px;
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .top a{
+    color: blanchedalmond;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+  .BannersOuterDiv {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  .MainBannerDiv{
+    width: 100%;
+    height: 600px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   background: url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+   
+  }
+  .MainBannerInnerDiv1{
+    width: 100%;
+    height: 30%;
+    overflow-x: hidden;
+    
+  }
+  .MainBannerInnerDiv2{
+  
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  .divToPlaceImages{
+    width: 100%;
+    position: relative;
+    left: 20%;
+    top: -185%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  #Layer_1{
+    background:url('./assets/logo/WhatsApp\ Image\ 2021-10-05\ at\ 11.36.34.jpeg');
+    width: 90%;
+  }
+  
+  /*marketing*/
+  .marketing{
+    position: absolute;
+    top: 43.3%;
+    left: 55%;
+  }
+  .marketing p{
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .marketing p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .marketing p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  
+  .marketing img{
+    width: 100px;
+    opacity: 0;
+    transform:rotateX(90deg);
+  }
+  /*design*/
+  .design{
+    position: absolute;
+    top: 51%;
+    left: 0%;
+  }
+  
+  .design p{
+    
+     position: absolute;
+    top: 28%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .design p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .design p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .design img{
+  
+    width: 120px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*motion*/
+  .motion{
+  
+    position: absolute;
+    top: 47%;
+    left: 10%;
+  
+  }
+  .motion p{
+  
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  
+  }
+  .motion p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .motion p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .motion img{
+    width: 108px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*ads*/
+  .ads{
+    
+    position: absolute;
+    top: 46.4%;
+    left: 33%;
+  }
+  .ads p{
+  
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ads p span:nth-child(1){
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .ads p span:nth-child(2){
+    font-size: 6px;
+  
+  }
+  .ads img{
+    width: 105px;
+    opacity: 1;
+    transform:rotateX(90deg);
+  }
+  /*connectiong dots */
+  
+  .connectingDiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -130%;
+    left: 20%;
+    color: red;
+    font-size: 20px;
+  }
+  .connectingDiv div:nth-child(16),
+  div:nth-child(12),
+  div:nth-child(13),
+  div:nth-child(14),
+  div:nth-child(15){
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+  }
+  .dotsDiv{
+    display: none;
+   
+  }
+  .underTitle{
+    font-size: 8px;
+    position: absolute;
+    padding: 10px;
+    top: 13%;
+    left: 18%;
+    animation: 1500ms ease-in navLinkFade;
+  }
+  /*button div*/
+  
+  .container {
+    align-items: center;
+    border-radius: 26px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 36%;
+    right: 15%;
+    height: 32px;
+    width: 120px;
+    opacity: 0;
+  }
+  .text{
+    font-size: 12px;
+  }
+
+
+.nav-links{
+  position:absolute;
+
+   right:0px;
+   height:92vh;
+   top: 10vh;
+   overflow-x: hidden;
+   background-color:black;
+   display:flex;
+   flex-direction: column;
+     
+   align-items: center;
+   width:30%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+   font-size: 12px;
+ }
+
+ .nav-active{
+  transform: translateX(0%);
+}
+.burger{
+  position: relative;
+  left: 5%;
+}
+.logo{
+  position: relative;
+  left: -2%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:25px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+.logo h4{
+  font-size: 20px;
+}
+}
+@keyframes navLinkFade{
+  from{
+    opacity:0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-40deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  transform: rotate(90deg) translate(0px,0px);
+}
+
+.toggle .line3{
+  transform: rotate(35deg) translate(-5px,-6px);
+}
